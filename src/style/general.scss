@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import "~@fontsource/montserrat/index.css";
+@import "~@fontsource/montserrat/600.css";
+@import "~@fontsource/montserrat/700.css";
+
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    color: $text-color;
+
+    background-image: 
+        linear-gradient(
+            to right, 
+            transparent 0px,
+            transparent 20px,
+            rgba($text-color, 0.05) 20px,
+            rgba($text-color, 0.05) 40px
+        ),
+        linear-gradient(
+            to bottom,
+            transparent 0px,
+            transparent 20px,
+            rgba($text-color, 0.05) 20px,
+            rgba($text-color, 0.05) 40px
+        );
+    background-size: 
+        40px,
+        100% 40px;    
+    background-repeat: repeat;    
+}
